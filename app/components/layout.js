@@ -15,6 +15,7 @@ export default function Layout ({ children, home }) {
                     <Link href="/">
                         <a>Back to home</a>
                     </Link>
+                    Inspired by <a href="https://prisma-ai.com/">Prisma Labs</a>.
                 </div>
             )}
 
