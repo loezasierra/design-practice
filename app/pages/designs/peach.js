@@ -7,9 +7,10 @@ import Clients from "../../components/peach/clients"
 import Button from "../../components/peach/button"
 
 import { getImagePathsAndIDs } from "../../lib/publicFiles"
+import { getPagePathsAndIDs } from "../../lib/pageFiles"
 
 
-export default function Peach({ clientImages }) {
+export default function Peach({ clientImages, pages }) {
     return (
         <Layout>
 
@@ -18,7 +19,7 @@ export default function Peach({ clientImages }) {
                 <link rel="icon" type="image/png" href="/peach/favicon.png" />
             </Head>
 
-            <Nav />
+            <Nav linkGroup={pages} />
 
             <Jumbotron />
 
@@ -36,9 +37,11 @@ export default function Peach({ clientImages }) {
 
 export async function getStaticProps() {
     const clientImages = getImagePathsAndIDs("/peach/clients")
+    const pages = getPagePathsAndIDs("/designs")
     return {
         props: {
-            clientImages
+            clientImages,
+            pages
         }
     }
 }
