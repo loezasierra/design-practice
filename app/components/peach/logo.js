@@ -1,6 +1,6 @@
 
 export default function Logo() {
     return (
-        <>🍑PEACH</>
+        <text>🍑PEACH</text>
     )
 }
