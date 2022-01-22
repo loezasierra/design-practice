@@ -4,6 +4,7 @@ import Nav from "../../components/peach/nav"
 import Jumbotron from "../../components/peach/jumbotron"
 import LabeledSection from "../../components/peach/labeled-section"
 import Clients from "../../components/peach/clients"
+import Button from "../../components/peach/button"
 
 import { getFileNamesAndIDs } from "../../lib/publicFiles"
 
@@ -23,6 +24,10 @@ export default function Peach({ clientImages }) {
 
             <LabeledSection title="Stores">
                 <Clients images={clientImages} />
+            </LabeledSection>
+
+            <LabeledSection title="Button">
+                <Button />
             </LabeledSection>
 
         </Layout>
