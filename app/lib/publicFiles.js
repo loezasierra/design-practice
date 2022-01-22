@@ -9,7 +9,7 @@ export function getFileNamesAndIDs(path) {
     const fileNames = fs.readdirSync(absolutePath)
 
     return fileNames.map(fileName => {
-        const id = fileName.replace(/\.jpg$|\.png$/, "")
+        const id = fileName.replace(/\.jpg$|\.png$|\.svg$/, "")
         const filePath = path + '/' + fileName
         return {
             id,
