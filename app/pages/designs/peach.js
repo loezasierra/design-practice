@@ -37,7 +37,7 @@ export default function Peach({ clientImages, pages }) {
 
 export async function getStaticProps() {
     const clientImages = getImagePathsAndIDs("/peach/clients")
-    const pages = getPagePathsAndIDs("/designs")
+    const pages = getPagePathsAndIDs("/designs", "peach")
     return {
         props: {
             clientImages,
