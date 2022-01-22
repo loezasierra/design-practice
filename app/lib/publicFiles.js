@@ -4,7 +4,7 @@ import path from 'path'
 
 const publicDirectory = path.join(process.cwd(), 'public')
 
-export function getFileNamesAndIDs(path) {
+export function getImagePathsAndIDs(path) {
     const absolutePath = publicDirectory + path
     const fileNames = fs.readdirSync(absolutePath)
 

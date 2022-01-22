@@ -6,7 +6,7 @@ import LabeledSection from "../../components/peach/labeled-section"
 import Clients from "../../components/peach/clients"
 import Button from "../../components/peach/button"
 
-import { getFileNamesAndIDs } from "../../lib/publicFiles"
+import { getImagePathsAndIDs } from "../../lib/publicFiles"
 
 
 export default function Peach({ clientImages }) {
@@ -35,7 +35,7 @@ export default function Peach({ clientImages }) {
 }
 
 export async function getStaticProps() {
-    const clientImages = getFileNamesAndIDs("/peach/clients")
+    const clientImages = getImagePathsAndIDs("/peach/clients")
     return {
         props: {
             clientImages
