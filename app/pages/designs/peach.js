@@ -13,7 +13,7 @@ import { getPagePathsAndIDs } from "../../lib/pageFiles"
 
 export default function Peach({ clientImages, pages }) {
     return (
-        <div class={styles.main}>
+        <div className={styles.main}>
 
             <Layout>
 

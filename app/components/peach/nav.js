@@ -6,7 +6,7 @@ import styles from "./styles/nav.module.css"
 
 export default function Nav(props) {
     return (
-        <div class={styles.nav} >
+        <div className={styles.nav} >
             <Logo />
             <NavLinks>
                 <Link href="/"><a>Home</a></Link>
