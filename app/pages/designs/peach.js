@@ -33,12 +33,12 @@ export default function Peach({ clientImages, pages }) {
                 imgsrc="/peach/peaches/peach2.png"
             />
 
-            <LabeledSection title="Stores">
+            <LabeledSection title="Find a Peach at Your Local Market">
                 <Clients images={clientImages} />
             </LabeledSection>
 
-            <LabeledSection title="Button">
-                <Button />
+            <LabeledSection title="Join the Peach Machine!">
+                <Button text="Peach Jobs" />
             </LabeledSection>
 
         </Layout>
