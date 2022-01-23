@@ -21,7 +21,17 @@ export default function Peach({ clientImages, pages }) {
 
             <Nav linkGroup={pages} />
 
-            <Jumbotron />
+            <Jumbotron 
+                title="What's the best fruit?"
+                btntxt="Eat Peach"
+                imgsrc="/peach/peaches/peach1.png"
+            />
+
+            <Jumbotron 
+                title="Want to try the delicious nectar of the gods?"
+                btntxt="Try Peach"
+                imgsrc="/peach/peaches/peach2.png"
+            />
 
             <LabeledSection title="Stores">
                 <Clients images={clientImages} />

@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import Button from './button'
 
-export default function Jumbotron() {
+export default function Jumbotron({ title, btntxt, imgsrc }) {
     return (
-        <>
-            <Image src="/peach/favicon.png" width="100vh" height="100vh" />
-            Text
-            Button
-        </>
+        <div>
+            <h1>{title}</h1>
+            <Image src={imgsrc} height="900" width="600" />
+            <Button text={btntxt} />
+        </div>
     )
 }
