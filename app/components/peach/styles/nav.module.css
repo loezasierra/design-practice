@@ -6,3 +6,24 @@
 .nav > :first-child {
     margin-right: auto;
 }
+
+.menu {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    visibility: hidden;
+
+    height: 100vh;
+    width: 50vw;
+
+    background-color: white;
+}
+
+.menuButton {
+    background-color: transparent;
+    border: none;
+}
+
+.visible {
+    visibility: visible;
+}
