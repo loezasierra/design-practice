@@ -19,12 +19,12 @@ export default function Nav(props) {
 
             <button 
             onClick={() => showMenu()}
-            className={styles.menuButton}
+            className={styles.button}
             >
                 <Image src="/peach/menu.svg" height="25" width="25"/>
             </button>
 
-            <div className={`${styles.menu} ${menuVisibility ? styles.visible : ""}`}>
+            <div className={`${styles.menu} ${menuVisibility ? styles.visible : styles.hidden}`}>
 
                 <button onClick={() => hideMenu()}>X</button>
                 <NavLinks>
