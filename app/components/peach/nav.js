@@ -28,7 +28,7 @@ export default function Nav(props) {
 
                 <NavLinks>
                     <Link href="/"><a>Home</a></Link>
-                    <NavLinksGroup title="Other Designs" links={props.linkGroup} />
+                    <NavLinksGroup title="Designs" links={props.linkGroup} />
                 </NavLinks>
 
             </div>
