@@ -7,14 +7,21 @@
     margin-right: auto;
 }
 
+.nav > :nth-child(1),
+.nav > :nth-child(2) {
+    align-self: center;
+}
+
 .menu {
-    padding: 0 2rem;
+    padding: 2rem;
+    margin-top: 3rem;
     position: absolute;
     right: 0;
     z-index: 2;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     height: 100vh;
     width: 50vw;
@@ -35,6 +42,12 @@
     border: none;
 }
 
-.visible {
-    visibility: visible;
+.activeButton {
+    background-color: rgb(230, 230, 230);
+}
+
+.menuButton {
+    padding: 10px;
+    border-radius: 10px;
+}
 }
