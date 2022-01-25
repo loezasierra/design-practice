@@ -9,8 +9,7 @@ import styles from "./styles/nav.module.css"
 
 export default function Nav(props) {
     const [menuVisibility, setMenuVisibility] = useState(0)
-    const showMenu = () => setMenuVisibility(1)
-    const hideMenu = () => setMenuVisibility(0)
+    const toggleMenu = () => menuVisibility ? setMenuVisibility(0) : setMenuVisibility(1)
 
     return (
         <div className={styles.nav} >
@@ -18,15 +17,14 @@ export default function Nav(props) {
             <Logo />
 
             <button 
-            onClick={() => showMenu()}
-            className={styles.button}
+            onClick={() => toggleMenu()}
+            className={`${styles.button} ${styles.menuButton} ${menuVisibility ? styles.activeButton : ""}`}
             >
                 <Image src="/peach/menu.svg" height="25" width="25"/>
             </button>
 
             <div className={`${styles.menu} ${menuVisibility ? styles.visible : styles.hidden}`}>
 
-                <button onClick={() => hideMenu()}>X</button>
                 <NavLinks>
                     <Link href="/"><a>Home</a></Link>
                     <NavLinksGroup title="Other Designs" links={props.linkGroup} />
