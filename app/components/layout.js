@@ -16,14 +16,14 @@ export default function Layout ({ children, home }) {
                 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap" rel="stylesheet" />
             </Head>
 
-            {!home && (
+            {/* {!home && (
                 <div>
                     <Link href="/">
                         <a>Back to home</a>
                     </Link>
                     Inspired by <a href="https://prisma-ai.com/">Prisma Labs</a>.
                 </div>
-            )}
+            )} */}
 
             <main>{children}</main>
 
