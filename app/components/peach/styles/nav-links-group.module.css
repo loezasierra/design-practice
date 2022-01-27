@@ -7,3 +7,21 @@
     width: 1.5rem;
     margin-bottom: 2px;
 }
+
+.button {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.visible {
+    visibility: hidden;
+}
